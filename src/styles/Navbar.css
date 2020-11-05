@@ -1,0 +1,18 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image {
+    background: url(https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f12985a91b23596370f7a81_logo-72-dc-7-f-0-f%402x.png) center center/cover no-repeat;
+    width: 73px;
+    height: 26px;
+    border-color: transparent;
+}
+
+.phone-icon {
+    background: url(https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f1297d1c3fecf36271c10a2_483947%403x.png) center center/cover no-repeat;
+    width: 25px;
+    height: 20px;
+    border-color: transparent;
+}

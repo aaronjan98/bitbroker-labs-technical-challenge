@@ -1,0 +1,8 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section {
+    width: 60%;
+}
