@@ -90,7 +90,51 @@
     border-radius: 50px;
     padding: 5px 10px;
     margin-top: 40px;
-    height: 60px;
-    justify-content: space-between;
+    height: 50px;
+    justify-content: space-around;
     margin: 40px 0 10px;
+}
+
+.input-container .search-input {
+    display: flex;
+    width: 65%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-container .search-input img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+
+.input-container .search-input input {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    font-family: AirbnbCerealLight,sans-serif;
+    font-size: 16px;
+    height: 25px;
+    padding: 5px 12px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.inpsection-btn {
+    background-color: #017afe;
+    max-width: 190px;
+    min-width: auto;
+    font-size: 14px;
+    border-radius: 22px;
+    font-family: AirbnbCerealBook, sans-serif;
+    display: inline-block;
+    padding: 13px 25px;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }

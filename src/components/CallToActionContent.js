@@ -11,9 +11,11 @@ function CallToActionContent() {
                 </div>
 
                 <form className="input-container" >
-                    <img className="home-image" src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" />
-                    <input placeholder="Enter Your Address" />
-                    <button>Get Inspection</button>
+                    <div className="search-input">
+                        <img className="home-image" src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" />
+                        <input placeholder="Your Address" />
+                    </div>
+                    <button class="inpsection-btn">Get Inspection</button>
                 </form>
             </div>
 
