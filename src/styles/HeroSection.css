@@ -1,0 +1,16 @@
+img {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background: url(https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a5fdde53536990207b49b_rr-bg-1280w-optimized.png) center center/cover no-repeat;
+}
+
+.hero-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
