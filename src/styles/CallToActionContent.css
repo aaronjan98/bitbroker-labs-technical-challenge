@@ -69,3 +69,23 @@
     margin-right: 0;
     padding-right: 20px;
 }
+
+.hero-div {
+    padding: 0 10px;
+}
+
+.hero-div h1 {
+    margin: 40px 0 10px;
+    font-weight: 700;
+    font-family: AirbnbCerealBold, sans-serif;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.hero-div h2 {
+    font-family: AirbnbCerealLight, sans-serif;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
