@@ -1,6 +1,7 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-image {
@@ -8,6 +9,11 @@
     width: 73px;
     height: 26px;
     border-color: transparent;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
 }
 
 .phone-icon {

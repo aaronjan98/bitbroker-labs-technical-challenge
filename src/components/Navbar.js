@@ -8,7 +8,7 @@ function NavBar() {
         <>
             <nav className="navbar-container">
                 <img className="logo-image"/>
-                <div>
+                <div className="phone-container">
                     <img className="phone-icon" />
                     <span>+1 (800) 401-7716</span>
                 </div>

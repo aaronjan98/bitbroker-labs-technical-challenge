@@ -1,0 +1,18 @@
+.input-container {
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.benefits-bar {
+    display: flex;
+}
+
+.home-image {
+    background: url(https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png) center center/cover no-repeat;
+    width: 22px;
+    height: 22px;
+}
