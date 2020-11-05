@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import '../styles/BottomNav.css'
 
 function BottomNav() {
     return (
         <>
          <nav className="btm-navbar-container">
-             <span>Home</span>
-             <span>FAQ</span>
-             <span>Services</span>
+             <span className="nav-site">Home</span>
+             <span className="nav-site">FAQ</span>
+             <span className="nav-site">Services</span>
          </nav>   
         </>
     )
