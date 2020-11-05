@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import BottomNav from './BottomNav.js';
 
 function NavBar() {
     return (
@@ -12,6 +13,7 @@ function NavBar() {
                     <span>+1 (800) 401-7716</span>
                 </div>
             </nav>
+            <BottomNav />
         </>
     )
 }
