@@ -12,6 +12,7 @@
 }
 
 .phone-container {
+    text-decoration: none;
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -23,6 +24,7 @@
 }
 
 span strong {
+    color: #fff;
     line-height: 20px;
     font-family: AirbnbCerealBold, sans-serif;
 }

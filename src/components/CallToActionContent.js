@@ -41,10 +41,9 @@ function CallToActionContent() {
                         
                         <PlacesAutocomplete value={address} onChange={handleChange} onSelect={handleChange}>
                             {renderFunc}
-                        </PlacesAutocomplete>;
-
+                        </PlacesAutocomplete>
                     </div>
-                    <button class="inpsection-btn">Get Inspection</button>
+                    <button class="inspection-btn">Get Inspection</button>
                 </form>
             </div>
         </>

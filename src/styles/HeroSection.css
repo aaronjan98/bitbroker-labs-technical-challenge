@@ -7,6 +7,30 @@
     background-position: 0 80%;
 }
 
+@media screen and (max-width: 767px) {
+    .hero-image {
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-image {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-image {
+        height: 95%;
+    }
+}
+
 .hero-container {
     height: 100%;
     width: 100%;

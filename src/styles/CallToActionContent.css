@@ -40,20 +40,24 @@
 
 .input-container .search-input {
     display: flex;
-    width: 280px;
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
 }
 
 .input-container .search-input img {
-    width: 25px;
+    width: 20px;
     height: auto;
     margin-right: 10px;
     padding-right: 5px;
 }
 
+.autocomplete-root {
+    width: 100%;
+}
+
 .autocomplete-root input {
-    width: 145%;
+    width: 90%;
     border-style: solid;
     border-width: 1px;
     border-color: transparent;
@@ -80,22 +84,26 @@
     height: 0px;
 }
 
-.inpsection-btn {
+.inspection-btn {
     background-color: #017afe;
     max-width: 190px;
-    min-width: auto;
+    min-width: 140px;
     font-size: 14px;
     border-radius: 22px;
     font-family: AirbnbCerealBook, sans-serif;
     display: inline-block;
-    padding: 13px 25px;
+    padding: 13px 24px;
     color: #fff;
     border: 0;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
 }
-
+@media screen and (max-width: 400px) {
+    .inspection-btn {
+        padding: 10px 0px;
+    }
+}
 /* styling dropdown */
 
 .pac-container {
