@@ -18,10 +18,15 @@ function CallToActionContent() {
                     ? 'suggestion-item--active'
                     : 'suggestion-item';
                     
-                    return (
+                return (
+                    <>
                         <div {...getSuggestionItemProps(suggestion, { className })}>
-                            <span className="autocomplete-dropdown">{suggestion.description}</span>
+                            <span className="autocomplete-dropdown">
+                                {suggestion.description}
+                            </span>
                         </div>
+                        <div className="pac-logo" />
+                    </>
                 )})}
             </div>
         </div>
