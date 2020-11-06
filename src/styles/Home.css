@@ -1,11 +1,17 @@
 .main-content {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+
+.main-section {
+    width: 66%;
+}
+
 @media screen and (max-width: 991px) {
-    .main-content {
-        max-width: 728px;
+    .main-section {
+        width: 728px;
     }
 }
 
