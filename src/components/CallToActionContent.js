@@ -11,13 +11,22 @@ function CallToActionContent() {
 
     const renderFunc = ({ getInputProps, getSuggestionItemProps, suggestions }) => (
         <div className="autocomplete-root">
-            <input {...getInputProps()} />
+            <input {...getInputProps({ placeholder: 'Your Address' })} />
             <div className="autocomplete-dropdown-container">
-                {suggestions.map(suggestion => (
-                    <div {...getSuggestionItemProps(suggestion)}>
-                    <span>{suggestion.description}</span>
-                    </div>
-                ))}
+                {suggestions.map(suggestion => {
+                    const className = suggestion.active
+                    ? 'suggestion-item--active'
+                    : 'suggestion-item';
+                    // inline style for demonstration purpose
+                    const style = suggestion.active
+                    ? { backgroundColor: '#fafafa', cursor: 'pointer', color: 'black' }
+                    : { backgroundColor: '#ffffff', cursor: 'pointer', color: 'black' };
+                    
+                    return (
+                        <div {...getSuggestionItemProps(suggestion, { className, style })}>
+                            <span className="autocomplete-dropdown">{suggestion.description}</span>
+                        </div>
+                )})}
             </div>
         </div>
     );
@@ -34,9 +43,7 @@ function CallToActionContent() {
                     <div className="search-input">
                         <img className="home-image" src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" />
                         
-                        {/* {<input placeholder="Your Address" />} */}
-                        // In render function
-                        <PlacesAutocomplete value={address} onChange={handleChange}>
+                        <PlacesAutocomplete value={address} onChange={handleChange} onSelect={handleChange}>
                             {renderFunc}
                         </PlacesAutocomplete>;
 
