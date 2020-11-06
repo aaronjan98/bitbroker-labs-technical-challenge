@@ -12,18 +12,14 @@ function CallToActionContent() {
     const renderFunc = ({ getInputProps, getSuggestionItemProps, suggestions }) => (
         <div className="autocomplete-root">
             <input {...getInputProps({ placeholder: 'Your Address' })} />
-            <div className="autocomplete-dropdown-container">
+            <div className="pac-container">
                 {suggestions.map(suggestion => {
                     const className = suggestion.active
                     ? 'suggestion-item--active'
                     : 'suggestion-item';
-                    // inline style for demonstration purpose
-                    const style = suggestion.active
-                    ? { backgroundColor: '#fafafa', cursor: 'pointer', color: 'black' }
-                    : { backgroundColor: '#ffffff', cursor: 'pointer', color: 'black' };
                     
                     return (
-                        <div {...getSuggestionItemProps(suggestion, { className, style })}>
+                        <div {...getSuggestionItemProps(suggestion, { className })}>
                             <span className="autocomplete-dropdown">{suggestion.description}</span>
                         </div>
                 )})}
