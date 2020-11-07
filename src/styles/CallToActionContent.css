@@ -52,6 +52,14 @@
     padding-right: 5px;
 }
 
+@media screen and (max-width: 400px) {
+    .inspection-btn {
+        padding: 10px 0px;
+    }
+}
+
+/* styling dropdown */
+
 .autocomplete-root {
     width: 100%;
 }
@@ -70,18 +78,18 @@
     background-color: #fff;
 }
 
-.autocomplete-root .autocomplete-dropdown-container {
+.autocomplete-root .pac-container {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
     cursor: "pointer";
+    padding: 2px;
 }
 
-.autocomplete-root .autocomplete-dropdown-container .autocomplete-dropdown {
-    background-color: "#a83232";
-    background-image: none !important;
-    height: 0px;
+.autocomplete-root .pac-container .autocomplete-dropdown {
+    display: flex;
+    align-items: center;
+    border-bottom: #d9d9d9 1px solid;
 }
 
 .inspection-btn {
@@ -99,14 +107,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-@media screen and (max-width: 400px) {
-    .inspection-btn {
-        padding: 10px 0px;
-    }
-}
-
-/* styling dropdown */
 
 .pac-container {
     background-color: #fff;
@@ -149,20 +149,13 @@
     color: #999
 }
 .pac-item:hover {
-    background-color: #fafafa
+    background-color: #fafafa;
 }
-.pac-item-selected,
-.pac-item-selected:hover {
-    background-color: #ebf2fe
+.suggestion-item--active,
+.suggestion-item--active:hover {
+    background-color: #ebf2fe;
 }
-.pac-matched {
-    font-weight: 700
-}
-.pac-item-query {
-    font-size: 13px;
-    padding-right: 3px;
-    color: #000
-}
+
 .pac-icon {
     width: 15px;
     height: 20px;
@@ -176,18 +169,7 @@
 .hdpi .pac-icon {
     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
 }
-.pac-icon-search {
-    background-position: -1px -1px
-}
-.pac-item-selected .pac-icon-search {
-    background-position: -18px -1px
-}
+
 .pac-icon-marker {
-    background-position: -1px -161px
-}
-.pac-item-selected .pac-icon-marker {
-    background-position: -18px -161px
-}
-.pac-placeholder {
-    color: gray
+    background-position: 0px -162px
 }

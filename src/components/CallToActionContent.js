@@ -18,16 +18,18 @@ function CallToActionContent() {
                     ? 'suggestion-item--active'
                     : 'suggestion-item';
                     
-                return (
-                    <>
-                        <div {...getSuggestionItemProps(suggestion, { className })}>
-                            <span className="autocomplete-dropdown">
-                                {suggestion.description}
-                            </span>
-                        </div>
-                        <div className="pac-logo" />
-                    </>
-                )})}
+                    return (
+                        <>
+                            <div {...getSuggestionItemProps(suggestion, { className })}>
+                                <span className="autocomplete-dropdown">
+                                    <span className="hdpi pac-icon pac-icon-marker" />
+                                    {suggestion.description}
+                                </span>
+                            </div>
+                            <div className="hdpi pac-logo" />
+                        </>
+                    )
+                })}
             </div>
         </div>
     );
